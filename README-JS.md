@@ -49,3 +49,30 @@
 
 		return ret;
 	}
+
+### 格式化输出，比如 100000000 => 100,000,000
+
+    var formatNumber =  function (n){
+        var b=parseInt(n).toString();
+        var len=b.length;
+        if(len<=3){return b;}
+        var r=len%3;
+        return r>0?b.slice(0,r)+","+b.slice(r,len).match(/\d{3}/g).join(","):b.slice(r,len).match(/\d{3}/g).join(",");
+    }
+
+    var commafy = function (num){  
+		var decimalPart = '';
+		num = num.toString();
+
+		if (num.indexOf('.') != -1) {
+			decimalPart = '.' + num.split('.')[1];
+			num = parseInt(num.split('.')[0]);
+		}
+		var array = num.toString().split('')， index = -3;
+
+		while (array.length + index > 0) {
+			array.splice(index, 0, ',');
+			index -= 4;
+		}
+		return array.join('') + decimalPart;
+	}  
