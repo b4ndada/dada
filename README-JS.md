@@ -76,3 +76,9 @@
 		}
 		return array.join('') + decimalPart;
 	}  
+
+### 随机数
+
+	var random = function(a,b){
+        return a + Math.random()*(b-a);
+    }

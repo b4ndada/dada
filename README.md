@@ -7,4 +7,4 @@
 - o 为输出文件
 - 可保存为批处理文件a.bat
 - 下载地址: http://yui.github.io/yuicompressor/</p>
-- java -jar "E:\wamp\www\creativejs\source\dcreative\yuicompressor.jar"  --charset utf-8 --type css css-debug.css -o css-min.css
+- java -jar "yuicompressor.jar"  --charset utf-8 --type css css.css -o css-min.css

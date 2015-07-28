@@ -6,4 +6,5 @@
 	    text-overflow: ellipsis;
 	    white-space:nowrap;
 	    word-break:keep-all;
+	    
 	}
